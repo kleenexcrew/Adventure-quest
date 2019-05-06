@@ -14,7 +14,6 @@ header {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     background-image: url('../../assets/map.png');
     height: 100%;
     width: 100%;
@@ -22,22 +21,4 @@ header {
     max-width: 500px;
     min-height: 400px;
     min-width: 400px;
-}
-
-#burning-quest {
-    position: absolute;
-    /* top: -100px;
-    left: -30px; */
-}
-
-#bank-quest {
-    position: absolute;
-}
-
-#train-quest {
-    position: absolute;
-}
-
-#car-quest {
-    position: absolute;
 }
