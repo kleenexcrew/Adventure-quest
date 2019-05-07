@@ -1,17 +1,15 @@
 import api from '../services/api.js';
+import loadProfile from '../load-profile.js';
+import createQuestLink from './create-quest-link.js';
 
-const userName = document.getElementById('user-name');
-const hitPoints = document.getElementById('hp');
-const civilianSaved = document.getElementById('cs');
-const userIcon = document.getElementById('user-icon');
+loadProfile();
 
-const profileInfo = api.getUser();
+const map = document.getElementById('map-container');
+const questData = api.getQuests();
 
-if(!profileInfo) {
-    window.location = './';
+for(let i = 0; i < questData.length; i++) {
+    const quest = questData[i];
+    
+    map.appendChild(createQuestLink(quest));
+    
 }
-
-userName.textContent = profileInfo.name;
-hitPoints.textContent = profileInfo.hp;
-civilianSaved.textContent = profileInfo.cs;
-userIcon.src = './assets/' + profileInfo.power + '.png';

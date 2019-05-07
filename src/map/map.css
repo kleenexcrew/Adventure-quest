@@ -10,3 +10,7 @@
     min-height: 400px;
     min-width: 400px;
 } */
+
+a {
+    display: block;
+}

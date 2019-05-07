@@ -4,7 +4,7 @@ function createQuestLink(quest) {
     const searchParams = new URLSearchParams();
     searchParams.set('id', quest.id);
     link.href = './quest-page.html?' + searchParams.toString();
-    link.textContent = 'Burning Building';
+    link.textContent = quest.title;
     return link;
 }
 
