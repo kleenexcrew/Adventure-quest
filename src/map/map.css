@@ -1,15 +1,3 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-   
-}
-
-#user-icon {
-    width: 30px;
-}
-
-
 #map-container {
     margin-top: 30px;
     margin-left: auto;
