@@ -18,5 +18,4 @@ test('creates correct link html', function(assert) {
 
     //Assert
     assert.deepEqual(dom.outerHTML, expected);
-
 });
