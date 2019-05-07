@@ -1,3 +1,5 @@
+import createQuestLink from '../src/map/create-quest-link.js';
+
 const test = QUnit.test;
 
 test('creates correct link html', function(assert) {
@@ -8,7 +10,7 @@ test('creates correct link html', function(assert) {
     };
 
     // Set up your parameters and expectations
-    const expected = '<a id="burning-building" href="./quest-page.html?id=burnind-building">Burning Building</a>'
+    const expected = '<a href="./quest-page.html?id=burning-building">Burning Building</a>';
 
     //Act 
     const dom = createQuestLink(quest);
