@@ -46,3 +46,7 @@ header {
 #user-icon {
     width: 30px;
 }
+
+.hidden {
+    display: none;
+}

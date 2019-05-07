@@ -1,6 +1,6 @@
 const quest1 = {
     id: 'burning-building',
-    title: 'The high rise is on fire!',
+    title: 'Burning Building',
     map: {
         top: '0%',
         left: '0%'
