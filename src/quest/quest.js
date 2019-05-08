@@ -8,6 +8,9 @@ const questTitle = document.getElementById('title');
 const questImage = document.getElementById('image');
 const choiceForm = document.getElementById('choice-form');
 const questDescription = document.getElementById('description');
+const result = document.getElementById('result');
+const resultDescription = document.getElementById('result-description');
+
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 
@@ -35,9 +38,11 @@ choiceForm.addEventListener('submit', event => {
         if(choice.id === choiceId) {
             api.saveUser(scoreQuest(user, choice));
             loadProfile();
+            resultDescription.textContent = choice.result;
         }
     }
-    
+    choiceForm.classList.add('hidden');
+    result.classList.remove('hidden');
 });
 
 loadProfile();
