@@ -35,3 +35,18 @@ fieldset {
 .add-space {
     margin-bottom: 30px;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+#user-icon {
+    width: 30px;
+}
+
+.hidden {
+    display: none;
+}

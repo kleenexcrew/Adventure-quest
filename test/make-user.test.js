@@ -20,6 +20,7 @@ test('create user object from form data', function(assert) {
         name: 'wes',
         power: 'invisibility',
         hp: 50,
-        cs: 0
+        cs: 0,
+        completed: {}
     });
 });

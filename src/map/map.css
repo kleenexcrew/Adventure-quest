@@ -1,16 +1,4 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-   
-}
-
-#user-icon {
-    width: 30px;
-}
-
-
-#map-container {
+/* #map-container {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -21,4 +9,12 @@ header {
     max-width: 500px;
     min-height: 400px;
     min-width: 400px;
+} */
+
+a {
+    display: block;
+}
+
+.completed-span {
+    display: block;
 }
