@@ -1,10 +1,6 @@
-const test = QUnit.test;
+import scoreQuest from '../src/quest/score-quest.js';
 
-function scoreQuest(user, choice) {
-    user.hp = user.hp + choice.hp;
-    user.cs = user.cs + choice.cs;
-    return user;
-}
+const test = QUnit.test;
 
 test('score the quest', function(assert) {
     //Arrange

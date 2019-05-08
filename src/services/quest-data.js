@@ -121,7 +121,7 @@ const quest3 = {
         hp: 0,
         cs: 100
     }, {
-        id: '',
+        id: 'jump',
         description: 'Jump on the train from an overpass',
         result: `
             You make it onto the train but you have motion sickness

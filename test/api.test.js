@@ -20,7 +20,7 @@ test('saves and gets signup form data', function(assert) {
     };
 
     //Act 
-    api.signUp(user);
+    api.saveUser(user);
     const result = api.getUser();
 
     //Assert
