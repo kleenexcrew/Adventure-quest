@@ -17,6 +17,7 @@ function createChoice(questChoice) {
 
     return div;
 }
+
 test('make quest choice radio', assert => {
     // Arrange
     const questChoice = {
