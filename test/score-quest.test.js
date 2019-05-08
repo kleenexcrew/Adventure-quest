@@ -1,5 +1,11 @@
 const test = QUnit.test;
 
+function scoreQuest(user, choice) {
+    user.hp = user.hp + choice.hp;
+    user.cs = user.cs + choice.cs;
+    return user;
+}
+
 test('score the quest', function(assert) {
     //Arrange
     const user = {
