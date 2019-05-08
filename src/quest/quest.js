@@ -36,7 +36,7 @@ choiceForm.addEventListener('submit', event => {
     for(let index = 0; index < questData.choices.length; index++) {
         const choice = questData.choices[index];
         if(choice.id === choiceId) {
-            api.saveUser(scoreQuest(user, choice));
+            api.saveUser(scoreQuest(user, choice, questData.id));
             loadProfile();
             resultDescription.textContent = choice.result;
         }
