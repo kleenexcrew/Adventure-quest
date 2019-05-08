@@ -7,7 +7,7 @@ test('create span element', function(assert) {
         title: 'Burning Building',
     };
 
-    const expected = '<span>Burning Building</span>';
+    const expected = '<span class="completed-span">Burning Building</span>';
     //Act 
     const dom = createCompletedQuest(quest);
     //Assert
