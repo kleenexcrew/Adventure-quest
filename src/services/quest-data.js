@@ -5,7 +5,7 @@ const quest1 = {
         top: '0%',
         left: '0%'
     },
-    image: '',
+    image: 'burning-building.png',
     description: `
         As you patrol the streets of the inner-city the sound 
         of sirens drifts along the breeze. You rush to their source
@@ -51,7 +51,7 @@ const quest2 = {
         top: '0%',
         left: '0%'
     },
-    image: '',
+    image: 'bank-heist.png',
     description: `
         You go to the bank to withdraw money for your grandmother.
         Suddenly, you hear a loud yell, "Stick 'em up!!!" Bank robbers
@@ -97,7 +97,7 @@ const quest3 = {
         top: '0%',
         left: '0%'
     },
-    image: '',
+    image: 'runaway-train.png',
     description: `
         A passenger train headed towards Central station has lost
         its brakes. What do you do?`,
@@ -144,7 +144,7 @@ const quest4 = {
         top: '0%',
         left: '0%'
     },
-    image: '',
+    image: 'car-pile-up.png',
     description: `
         While out on a joy ride in your Lambo you come upon a massive
         car pile up. People are trapped, what do you do?`,

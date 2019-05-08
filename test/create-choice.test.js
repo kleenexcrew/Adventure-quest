@@ -1,22 +1,5 @@
+import createChoice from '../src/quest/create-choice.js';
 const test = QUnit.test;
-
-function createChoice(questChoice) {
-    const div = document.createElement('div');
-    const label = document.createElement('label');
-    const input = document.createElement('input');
-    
-    input.id = questChoice.id;
-    input.type = 'radio';
-    input.name = 'choice-radio';
-    input.value = questChoice.id;
-    
-    label.setAttribute('for', questChoice.id);
-    label.textContent = questChoice.description;
-    div.appendChild(input);
-    div.appendChild(label);
-
-    return div;
-}
 
 test('make quest choice radio', assert => {
     // Arrange
