@@ -2,41 +2,41 @@ import scoreHp from '../src/end/score-hp.js';
 
 const test = QUnit.test;
 
-test('return dead if dead', assert => {
+test('return useless if equal to 0', assert => {
     // Arrange
     const user = {
-        hp: 0
+        cs: 0
     };
     
-    const expected = 'dead';
+    const expected = 'useless';
     // Act
-    const result = scoreHp(user);
+    const result = scoreCs(user);
     // Assert
     assert.equal(result, expected);
 });
 
-test('return crippled if less than 50 and greater than 0', assert => {
+test('return helpful if less than or equal to 50', assert => {
     // Arrange
     const user = {
-        hp: 49
+        cs: 49
     };
     
-    const expected = 'crippled';
+    const expected = 'helpful';
     // Act
-    const result = scoreHp(user);
+    const result = scoreCs(user);
     // Assert
     assert.equal(result, expected);
 });
 
-test('return healthy if hp 50 and above', assert => {
+test('return virtuous if cs above 50', assert => {
     // Arrange
     const user = {
-        hp: 50
+        cs: 51
     };
     
-    const expected = 'healthy';
+    const expected = 'virtuous';
     // Act
-    const result = scoreHp(user);
+    const result = scoreCs(user);
     // Assert
     assert.equal(result, expected);
 });
