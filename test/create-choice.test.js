@@ -13,7 +13,7 @@ test('make quest choice radio', assert => {
         cs: 10
     };
 
-    const expected = '<div><input id="rush" type="radio" name="choice-radio" value="rush"><label for="rush">Rush into the burning building!</label></div>';
+    const expected = '<div><input id="rush" type="radio" name="choice-radio" value="rush" required="true"><label for="rush">Rush into the burning building!</label></div>';
     // Act
     const dom = createChoice(questChoice);
     // Assert

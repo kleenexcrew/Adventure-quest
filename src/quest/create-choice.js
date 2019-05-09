@@ -7,6 +7,7 @@ function createChoice(questChoice) {
     input.type = 'radio';
     input.name = 'choice-radio';
     input.value = questChoice.id;
+    input.setAttribute('required', true);
     
     label.setAttribute('for', questChoice.id);
     label.textContent = questChoice.description;
