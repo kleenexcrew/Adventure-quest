@@ -8,7 +8,7 @@ createHero.addEventListener('submit', event => {
     const formData = new FormData(createHero);
     const user = makeUser(formData);
     
-    api.signUp(user);
+    api.saveUser(user);
 
     window.location = '../../map.html';
 });

@@ -1,4 +1,6 @@
 import api from '../src/services/api.js';
+import quests from '../src/services/quest-data.js';
+
 const test = QUnit.test;
 
 QUnit.testStart(() => {
@@ -18,9 +20,27 @@ test('saves and gets signup form data', function(assert) {
     };
 
     //Act 
-    api.signUp(user);
+    api.saveUser(user);
     const result = api.getUser();
 
     //Assert
     assert.deepEqual(result, user);
+});
+
+test('gets all quests', assert => {
+    // Arrange
+    const expected = quests;
+    // Act
+    const results = api.getQuests();
+    // Assert
+    assert.deepEqual(results, expected);
+});
+
+test('get quest with id', assert => {
+    // Arrange
+    const expected = quests[1];
+    // Act
+    const foundQuest = api.getQuest(expected.id);
+    // Assert
+    assert.deepEqual(foundQuest, expected);
 });

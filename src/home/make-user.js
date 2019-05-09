@@ -3,7 +3,8 @@ function makeUser(formData) {
         name: formData.get('name'),
         power: formData.get('power'),
         hp: 50,
-        cs: 0
+        cs: 0,
+        completed: {}
     };
     return user;
 }

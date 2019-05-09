@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Map</title>
-    <link rel="stylesheet" href="./src/map/map.css">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/quest/quest.css">
+    <title>Quest Page</title>
 </head>
 <body>
     <header>
@@ -24,10 +24,20 @@
         </div>
     </header>
     <main>
-        <h2>Choose your quest!</h2>
-        <div id='map-container'></div>
+        <h2 id="title">Title</h2>
+        <img id="image" alt="quest-image">
+        <p id="description">Description here</p>
+        <form id="choice-form">
+            <p id="choices">
+            </p>
+            <button>Choose</button>
+        </form>
+        <section class="hidden" id="result">
+            <p id="result-description"></p>
+            <a href="./map.html">Back to Map</a>
+        </section>   
     </main>
     
-    <script type="module" src="./src/map/map.js"></script>
+    <script type="module" src="src/quest/quest.js"></script>
 </body>
 </html>

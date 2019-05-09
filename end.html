@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Map</title>
-    <link rel="stylesheet" href="./src/map/map.css">
+    <title>End page</title>
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/end/end.css">
 </head>
 <body>
     <header>
         <div>
             <span id="user-name"></span>
+            <br>
             <img id="user-icon" alt="user-icon">
         </div>
         <h1>
@@ -24,10 +25,14 @@
         </div>
     </header>
     <main>
-        <h2>Choose your quest!</h2>
-        <div id='map-container'></div>
+        <h2>End of game</h2>
+        <img id="hp-image" alt="hp-image">
+        <p id="hp-message"></p>
+        <img id="cs-image" alt="cs-image">
+        <p id="cs-message"></p>
+
+        <a href="./">Play again</a>
     </main>
-    
-    <script type="module" src="./src/map/map.js"></script>
+    <script type="module" src="./src/end/end.js"></script>
 </body>
 </html>

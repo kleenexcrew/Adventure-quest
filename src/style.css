@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Oswald');
+
+html { 
+    background: url(../assets/background.png) no-repeat center center fixed; 
+    background-size: cover;
+}
+
 label {
     display: block;
 }
@@ -6,16 +12,24 @@ label {
 body {
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    background: wheat;
+    max-width: 700px;
+    margin: auto;
 }
 
-header {
-    border-bottom: 1px solid;
+main {
+    text-align: center;
+    margin: auto;
+    background-color:  rgba(247, 243, 231, 0.9);
+    padding: 50px;
+    text-shadow: 0 0 5px rgb(210, 187, 99);
+    border: 10px solid rgb(42, 87, 235);
 }
 
 h1 {
     font-family: 'Anton', cursive;
     text-align: center;
+    color: white;
+    text-shadow: 0 0 5px rgb(235, 228, 13);
 }
 
 h2 {
@@ -34,4 +48,37 @@ fieldset {
 
 .add-space {
     margin-bottom: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    text-shadow: 0 0 5px rgb(42, 87, 235);
+    border: 10px solid rgb(42, 87, 235);
+}
+
+#user-icon {
+    width: 30px;
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+header div {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgba(14, 1, 1, 0.75);
+    padding: 30px;
+    color: white;
+    text-shadow: 0 0 5px rgb(235, 228, 13);
+    font-size: 20px;
+    border: 10px solid rgb(42, 87, 235);
+    height: 50px;
+    margin-top: 20px;
 }
