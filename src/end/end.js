@@ -17,4 +17,7 @@ const hpString = hpMessages[scoreHp(user)];
 hpMessage.textContent = hpString;
 csMessage.textContent = csString;
 
+hpImage.src = './assets/' + scoreHp(user) + '.png';
+csImage.src = './assets/' + scoreCs(user) + '.png';
+
 loadProfile();
