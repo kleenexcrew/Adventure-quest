@@ -1,12 +1,6 @@
-const test = QUnit.test;
+import isDead from '../src/map/is-dead.js';
 
-function isDead(user) {
-    if(user.hp <= 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
+const test = QUnit.test;
 
 test('return true if dead', assert => {
     // Arrange
