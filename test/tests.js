@@ -7,3 +7,4 @@ import './score-quest.test.js';
 import './has-completed-all-quests.test.js';
 import './is-dead.test.js';
 import './score-hp.test.js';
+import './score-cs.test.js';

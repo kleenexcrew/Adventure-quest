@@ -1,4 +1,4 @@
-import scoreHp from '../src/end/score-hp.js';
+import scoreCs from '../src/end/score-cs.js';
 
 const test = QUnit.test;
 
