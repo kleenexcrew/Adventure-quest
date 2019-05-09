@@ -1,4 +1,6 @@
+import hasCompletedAllQuests from '../src/map/has-completed-all-quests.js';
 const test = QUnit.test;
+
 
 test('return true when completed all quests', assert => {
     // Arrange
@@ -9,7 +11,7 @@ test('return true when completed all quests', assert => {
             quest2: true,
             quest3: true
         }
-    }
+    };
     const expected = true;
     // Act
     const result = hasCompletedAllQuests(quests, user);
